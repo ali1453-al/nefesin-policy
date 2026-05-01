@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hesap Silme | Nefesin</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #1a1614;
+  color: #f5e6d3;
+  line-height: 1.7;
+  padding: 20px;
+}
+.container {
+  max-width: 820px;
+  margin: 40px auto;
+  background: #251f1c;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f5e6d3;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.brand .dot { color: #ff6b6b; }
+.subtitle {
+  color: #a89580;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: #f5e6d3;
+}
+h2 {
+  font-size: 20px;
+  color: #ff6b6b;
+  margin: 32px 0 12px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 16px;
+  color: #f5e6d3;
+  margin: 16px 0 8px;
+}
+p, li {
+  margin-bottom: 12px;
+  color: #d4c0a8;
+}
+ul, ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+ol li {
+  margin-bottom: 16px;
+}
+.meta {
+  background: #1a1614;
+  border-left: 3px solid #ff6b6b;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+.meta strong { color: #f5e6d3; }
+.contact-box {
+  background: #1a1614;
+  border: 1px solid #3a302a;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 24px 0;
+}
+.warning-box {
+  background: rgba(255,107,107,0.1);
+  border-left: 3px solid #ff6b6b;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin: 24px 0;
+}
+.warning-box strong { color: #ff6b6b; }
+.info-box {
+  background: rgba(76, 175, 80, 0.1);
+  border-left: 3px solid #4caf50;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin: 24px 0;
+}
+.info-box strong { color: #4caf50; }
+a { color: #ff6b6b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back-link {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 12px 24px;
+  background: #ff6b6b;
+  color: white;
+  border-radius: 24px;
+  font-weight: 600;
+}
+.back-link:hover { text-decoration: none; background: #ff5252; }
+hr {
+  border: none;
+  border-top: 1px solid #3a302a;
+  margin: 24px 0;
+}
+.steps {
+  counter-reset: step-counter;
+  list-style: none;
+  padding-left: 0;
+}
+.steps li {
+  counter-increment: step-counter;
+  position: relative;
+  padding-left: 48px;
+  margin-bottom: 20px;
+}
+.steps li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  background: #ff6b6b;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .container { padding: 24px; }
+  h1 { font-size: 24px; }
+  h2 { font-size: 18px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<a href="https://nefesin.com.tr" class="brand">Nefesin<span class="dot">.</span></a>
+<div class="subtitle">Hesap Silme Talebi</div>
+
+<div class="meta">
+<p><strong>Uygulama:</strong> Nefesin (Tanışma Uygulaması)</p>
+<p><strong>Geliştirici:</strong> Ülkü Yapay Zeka ve Yazılım Tasarım Hizmetleri San. Tic. Ltd. Şti.</p>
+<p><strong>Versiyon:</strong> v1.0</p>
+<p><strong>Yürürlük Tarihi:</strong> 1 Mayıs 2026</p>
+</div>
+
+<h1>Hesabınızı Nasıl Silersiniz?</h1>
+
+<p>Nefesin kullanıcılarının kişisel verileri üzerinde tam kontrol sahibi olmasını sağlamayı taahhüt ederiz. Bu sayfa, hesabınızı ve tüm ilgili verilerinizi nasıl silebileceğinizi açıklamaktadır.</p>
+
+<h2>📱 Yöntem 1: Uygulama İçinden Hesap Silme (Önerilen)</h2>
+
+<ol class="steps">
+<li><strong>Nefesin uygulamasını açın</strong> ve hesabınıza giriş yapın</li>
+<li><strong>Sağ üstteki menü ikonuna (☰)</strong> dokunun</li>
+<li><strong>"Gizlilik & Verilerim"</strong> bölümüne gidin</li>
+<li><strong>"Hesabımı Sil"</strong> butonuna tıklayın</li>
+<li>Açılan onay ekranında <strong>silme nedenini belirtin</strong> (opsiyonel)</li>
+<li>Şifrenizi girin ve <strong>"Hesabımı Kalıcı Olarak Sil"</strong> butonuna tıklayın</li>
+<li>E-postanıza gelen onay linkine tıklayarak işlemi tamamlayın</li>
+</ol>
+
+<h2>📧 Yöntem 2: E-posta ile Hesap Silme Talebi</h2>
+
+<p>Uygulamaya erişiminiz yoksa, KEP adresimize e-posta gönderebilirsiniz:</p>
+
+<div class="contact-box">
+<p><strong>KEP Adresi:</strong> <a href="mailto:ulkuyapay@hs09.kep.tr">ulkuyapay@hs09.kep.tr</a></p>
+<br>
+<p><strong>E-posta Konusu:</strong> "Hesap Silme Talebi"</p>
+<br>
+<p><strong>E-posta İçeriği:</strong></p>
+<ul>
+<li>Hesap e-posta adresiniz</li>
+<li>Silme talebinizin nedeni (opsiyonel)</li>
+<li>"Tüm verilerimin silinmesini talep ediyorum" yazısı</li>
+</ul>
+</div>
+
+<p>Talebiniz <strong>en geç 30 gün içinde</strong> işleme alınacaktır.</p>
+
+<h2>🗑️ Hangi Veriler Silinir?</h2>
+
+<p>Hesap silme talebinizin onaylanmasının ardından aşağıdaki veriler <strong>kalıcı olarak silinir</strong>:</p>
+
+<ul>
+<li>✅ E-posta adresiniz ve şifreniz</li>
+<li>✅ Profil fotoğraflarınız (tüm 6 fotoğraf)</li>
+<li>✅ Biyografiniz ve prompt cevaplarınız</li>
+<li>✅ İlgi alanları ve tercih ayarlarınız</li>
+<li>✅ Yüz doğrulama verisi (selfie)</li>
+<li>✅ Konum verileriniz</li>
+<li>✅ Beğeni ve eşleşme geçmişi</li>
+<li>✅ Profil görüntüleme geçmişi</li>
+<li>✅ Bildirim tercihleri</li>
+<li>✅ Cihaz bilgileri</li>
+</ul>
+
+<h2>🔒 Saklanan Veriler (Yasal Zorunluluk)</h2>
+
+<div class="warning-box">
+<p>KVKK ve diğer mevzuat gereği bazı veriler <strong>anonimleştirilerek</strong> saklanmaya devam eder:</p>
+</div>
+
+<ul>
+<li><strong>Mesaj geçmişi:</strong> Karşı tarafın haklarını korumak için anonimleştirilerek saklanır (kişisel kimlik kalkar, sadece "Silinmiş Kullanıcı" olarak görünür)</li>
+<li><strong>Şikayet/bildirim kayıtları:</strong> Topluluk güvenliği için 1 yıl saklanır</li>
+<li><strong>Yasal bildirim kayıtları:</strong> Mevzuat gereği belirli sürelerde saklanır (örn. mahkeme talebi)</li>
+<li><strong>IP hash kayıtları:</strong> Güvenlik için 90 gün saklanır (sadece hash olarak)</li>
+</ul>
+
+<h2>⏱️ Saklama Süreleri</h2>
+
+<div class="info-box">
+<p><strong>Otomatik Silme:</strong> Hesap kapatma talebi onaylandıktan <strong>30 gün</strong> sonra tüm aktif veriler kalıcı olarak silinir. Bu süre, talebin yanlış yapıldığı durumlarda geri alabilmek için tampon süredir.</p>
+</div>
+
+<table style="width: 100%; border-collapse: collapse; margin: 16px 0;">
+<thead>
+<tr>
+<th style="background: #1a1614; padding: 12px; text-align: left; border-bottom: 2px solid #ff6b6b;">Veri Türü</th>
+<th style="background: #1a1614; padding: 12px; text-align: left; border-bottom: 2px solid #ff6b6b;">Saklama Süresi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px; border-bottom: 1px solid #3a302a;">Hesap, profil, fotoğraflar</td>
+<td style="padding: 12px; border-bottom: 1px solid #3a302a;">30 gün sonra silinir</td>
+</tr>
+<tr>
+<td style="padding: 12px; border-bottom: 1px solid #3a302a;">Yüz doğrulama hash'i</td>
+<td style="padding: 12px; border-bottom: 1px solid #3a302a;">30 gün sonra silinir</td>
+</tr>
+<tr>
+<td style="padding: 12px; border-bottom: 1px solid #3a302a;">Mesaj içeriği (anonimleştirilmiş)</td>
+<td style="padding: 12px; border-bottom: 1px solid #3a302a;">Karşı tarafın hesabı silinene kadar</td>
+</tr>
+<tr>
+<td style="padding: 12px; border-bottom: 1px solid #3a302a;">Şikayet/bildirim kayıtları</td>
+<td style="padding: 12px; border-bottom: 1px solid #3a302a;">1 yıl</td>
+</tr>
+<tr>
+<td style="padding: 12px; border-bottom: 1px solid #3a302a;">IP hash kayıtları</td>
+<td style="padding: 12px; border-bottom: 1px solid #3a302a;">90 gün</td>
+</tr>
+<tr>
+<td style="padding: 12px;">Mevzuat gereği yasal kayıtlar</td>
+<td style="padding: 12px;">Mevzuat süreleri (5-10 yıl)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>🔄 Hesap Silme İşlemini İptal Etme</h2>
+
+<p>30 günlük tampon süre içinde fikrinizi değiştirirseniz, aynı e-posta adresiyle tekrar giriş yaparak hesabınızı geri yükleyebilirsiniz. 30 gün sonra hesap **kalıcı olarak silinir** ve geri yüklenemez.</p>
+
+<h2>❓ Sıkça Sorulan Sorular</h2>
+
+<h3>Hesabımı tamamen silmeden bazı verilerimi silebilir miyim?</h3>
+<p>Şu anda parçalı silme özelliği bulunmamaktadır. Hesap silme tüm verileri silinir. Belirli verilerinizi düzenlemek için "Profilimi Düzenle" özelliğini kullanabilirsiniz.</p>
+
+<h3>Sildiğim hesabı geri alabilir miyim?</h3>
+<p>30 gün içinde aynı e-posta ile giriş yaparak geri alabilirsiniz. 30 gün sonra <strong>geri alınamaz</strong>.</p>
+
+<h3>Premium üyeliğim varsa ne olur?</h3>
+<p>Şu anda Nefesin'de tüm özellikler ücretsizdir (DEMO_MODE_ALL_PREMIUM). Ödeme aktifleştiğinde, kullanılmamış üyelik süreniz iade edilecektir.</p>
+
+<h3>Verilerimin bir raporunu alabilir miyim?</h3>
+<p>Evet. KEP adresimize başvurarak KVKK m.11 kapsamında verilerinizin tam raporunu talep edebilirsiniz.</p>
+
+<h2>📞 İletişim ve Destek</h2>
+
+<div class="contact-box">
+<p><strong>Ülkü Yapay Zeka ve Yazılım Tasarım Hizmetleri San. Tic. Ltd. Şti.</strong></p>
+<br>
+<p><strong>KEP Adresi:</strong> <a href="mailto:ulkuyapay@hs09.kep.tr">ulkuyapay@hs09.kep.tr</a></p>
+<p><strong>E-posta:</strong> <a href="mailto:ulkuyapay@hs09.kep.tr">ulkuyapay@hs09.kep.tr</a></p>
+<br>
+<p><strong>Yanıt Süresi:</strong> En geç 30 gün içinde</p>
+</div>
+
+<hr>
+
+<p style="text-align: center; margin-top: 32px; color: #a89580; font-size: 14px;">
+Son Güncelleme: 1 Mayıs 2026 · Versiyon: v1.0
+</p>
+
+<div style="text-align: center;">
+<a href="/" class="back-link">← Gizlilik Politikası</a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://nefesin.com.tr" class="back-link">← Nefesin Ana Sayfa</a>
+</div>
+
+</div>
+</body>
+</html>
